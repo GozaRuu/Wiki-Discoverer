@@ -1,0 +1,61 @@
+$bg-yellow : #d7d5a2
+$bg-blue : #022730
+$fg-yellow : #aa7525
+$fg-orange : #bf3f16
+//$fg-blue : #078380
+
+@import "reset.sass"
+@import url(//fonts.googleapis.com/css?family=Open+Sans)
+
+body
+  padding: 0
+  margin: 0
+  background: $bg-yellow
+  position: relative
+  font-family: 'Open Sans'
+
+.bootstrapper
+  height: 50vh
+  margin: 40px
+  .header
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: flex-start
+    .left
+      color: $fg-orange
+      width: 60%
+      height: 100%
+      flex: 1 1 auto
+      .left-header
+        text-align: center
+        font-size: 22px
+        padding: 20px
+        text-transform: uppercase
+        letter-spacing: 2px
+      .left-content
+        background: $bg-blue
+        display: flex
+        width: 100%
+        height: 50%
+        box-sizing: border-box
+        flex-direction: row
+        justify-content: center
+        font-size: 32px
+        .search-area
+          width: 15%
+          margin-right: 10px
+          border-radius: 20px
+          background: $fg-orange
+    .separator
+      width: 1px
+      margin: 10px
+      height: 60%
+      background: $fg-orange
+    .right
+      color: $fg-orange
+      width: 40%
+      height: 100%
+      .right-header
+        text-align: center
+        font-size: 16px
