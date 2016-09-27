@@ -1,61 +1,73 @@
-$bg-yellow : #d7d5a2
-$bg-blue : #022730
-$fg-yellow : #aa7525
-$fg-orange : #bf3f16
-//$fg-blue : #078380
+$bg-grey : #727272
+$fg-lightblue : #07666c
+$fg-darkblue : #141431
 
 @import "reset.sass"
-@import url(//fonts.googleapis.com/css?family=Open+Sans)
-
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,700)
 body
-  padding: 0
-  margin: 0
-  background: $bg-yellow
-  position: relative
-  font-family: 'Open Sans'
+  font-family: 'Open Sans', sans-serif
+  font-weight: 400
+  background-image: url('../images/BG_v1.1.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
 
 .bootstrapper
-  height: 50vh
-  margin: 40px
-  .header
-    width: 100%
-    height: 100%
-    display: flex
-    align-items: flex-start
-    .left
-      color: $fg-orange
-      width: 60%
-      height: 100%
-      flex: 1 1 auto
-      .left-header
-        text-align: center
-        font-size: 22px
-        padding: 20px
-        text-transform: uppercase
-        letter-spacing: 2px
-      .left-content
-        background: $bg-blue
-        display: flex
-        width: 100%
-        height: 50%
-        box-sizing: border-box
-        flex-direction: row
-        justify-content: center
-        font-size: 32px
-        .search-area
-          width: 15%
-          margin-right: 10px
-          border-radius: 20px
-          background: $fg-orange
-    .separator
-      width: 1px
-      margin: 10px
-      height: 60%
-      background: $fg-orange
-    .right
-      color: $fg-orange
-      width: 40%
-      height: 100%
-      .right-header
-        text-align: center
-        font-size: 16px
+  padding: 10px
+.Wikimedia
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  color: $bg-grey
+  .top
+    font-size: 12px
+    font-weight: 300
+    letter-spacing: 3px
+  .mid
+    max-width: 80px
+    .logo
+      width: 80px
+  .bottom
+    text-transform: uppercase
+    font-size: 14px
+    letter-spacing: 3px
+    font-weight: 400
+.title
+  text-align: center
+  font-size: 26pt
+  letter-spacing: 16px
+  font-weight: 700
+  text-transform: uppercase
+  color: $fg-lightblue
+  margin: 12px 0
+.functional
+  display: flex
+  justify-content: space-around
+  text-align: center
+  @media screen and (max-width: 800px)
+    flex-direction: column
+    align-items: center
+  .left
+    margin-left: 5%
+    @media screen and (max-width: 800px)
+      margin: 0
+      margin-bottom: 40px
+  .right
+    margin-right: 5%
+    @media screen and (max-width: 800px)
+      margin: 0
+  .head
+    font-size: 36pt
+    letter-spacing: 16px
+    font-weight: 300
+    text-transform: uppercase
+    color: $fg-darkblue
+    margin: 12px 0
+  .description
+    font-size: 14px
+    color: $fg-lightblue
+  .icon
+    margin-top: 12px
+    color: $fg-lightblue
+    font-size: 106px
