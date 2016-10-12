@@ -1,0 +1,24 @@
+<div class="suggession" ng-controller="suggession">
+  <div class="header">
+    <div class="search-box">
+      <h1>{{search}}</h1>
+      <br>
+    </div>
+  </div>
+  <div class="suggession-container">
+    <div class="sugg-element" ng-repeat="suggession in suggessions">
+      <div class="text">
+        <div class="title">
+          <h3>{{suggession.title}}</h3>
+        </div>
+        <div class="description">
+          {{suggession.description}}
+        </div>
+      </div>
+      <div class="icon">
+        <a ng-href="#/suggessions/{{suggession.id}}"><img ng-src="app/images/{{suggession.icon.link}}"
+           alt="{{suggession.icon.alt}}" class="" style="max-width:400px;"/></a>
+      </div>
+    </div>
+  </div>
+</div>
