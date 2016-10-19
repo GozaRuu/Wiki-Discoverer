@@ -1,5 +1,5 @@
 <div class="page-container" ng-controller="wikipage">
-  <div class="text">
+  <!-- <div class="text">
     <div class="title">
       <h3>{{title}}</h3>
     </div>
@@ -10,5 +10,22 @@
   <div class="icon">
     <img ng-src="app/images/{{icon.link}}"
        alt="{{icon.alt}}" class="" style="max-width:400px;"/>
+  </div> -->
+
+  <div class="title">
+    <h3>{{title}}</h3>
+  </div>
+  <div class="album">
+    <div class="main-image">
+      <img ng-src="app/images/{{images.main.link}}" alt="{{images.main.alt}}" />
+    </div>
+    <div class="optional-images">
+      <div class="optional-image" ng-repeat=" image in images.optionals">
+        <img ng-src="app/images/{{link}}" alt="{{alt}}" />
+      </div>
+    </div>
+  </div>
+  <div class="content">
+
   </div>
 </div>

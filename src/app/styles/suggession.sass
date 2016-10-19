@@ -1,0 +1,76 @@
+@import "base.sass"
+
+.suggession-template
+  padding-top: 10px
+  .header
+    //background: yellow
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    margin: 30px 0px
+    .close
+      i
+        font-size: 60px
+        color: $fg-lightred
+        margin-right: 46px
+        margin-top: 16px
+        text-shadow: 0px 0px 10px transparentize($fg-lightred, .8)
+        transition: all 0.3s ease-in-out
+        cursor: pointer
+      &:hover i
+        transform: rotateZ(180deg) scale(1.2)
+        color: $fg-lightblue
+        text-shadow: 0px 0px 10px transparentize($fg-lightblue, .8)
+
+        margin-top: 26px
+    .search-box
+      max-width: 400px
+      h1
+        font-size: 68px
+        text-transform: capitalize
+        font-weight: 300
+        letter-spacing: 1px
+        color: $fg-lightblue
+      h2
+        margin-left: -30px
+        font-size: 14px
+        letter-spacing: 4px
+        text-transform: uppercase
+        font-weight: 400
+        color: $bg-grey
+  .suggession-container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .suggession-element
+      display: flex
+      margin-bottom: 10px
+      width: 680px
+      max-height: 300px
+      background: transparentize(white, .4)
+      padding: 10px
+      box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.2)
+      .text
+        .title
+          font-size: 36px
+          color: $fg-lightred
+          font-weight: 400
+          margin: 5px 10px
+          letter-spacing: 2px
+          text-transform: uppercase
+        .description
+          margin: 5px 10px
+          color: $bg-grey
+          font-size: 14px
+      .icon
+        order: -1
+        width: 140px
+        height: 140px
+        overflow: hidden
+        img
+          max-height: 140px
+          border: 1px solid transparent
+          //border-radius: 50%
+      .text

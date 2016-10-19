@@ -12,7 +12,7 @@ angular.module('wiki-discoverer')
         alt: 'pink guy'
       },
       title: 'Pink Guy',
-      description: 'some moofakaa',
+      description: 'rapper and cook',
       longDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
     },
     {
@@ -31,10 +31,11 @@ angular.module('wiki-discoverer')
         link: 'img2.png',
         alt: 'red dick'
       },
-      title: 'Red Dick',
-      description: 'some japanese moofakaa',
+      title: 'Red Guy',
+      description: 'some random guy',
       longDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
     }
+
   ] ;
 
   return obj ;

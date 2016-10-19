@@ -1,12 +1,15 @@
-<div class="suggession" ng-controller="suggession">
+<div class="suggession-template" ng-controller="suggession">
   <div class="header">
+    <div class="close">
+      <i class="fa fa-close" ng-click="close()"></i>
+    </div>
     <div class="search-box">
+      <h2>this is wassup with:</h2>
       <h1>{{search}}</h1>
-      <br>
     </div>
   </div>
   <div class="suggession-container">
-    <div class="sugg-element" ng-repeat="suggession in suggessions">
+    <div class="suggession-element" ng-repeat="suggession in suggessions">
       <div class="text">
         <div class="title">
           <h3>{{suggession.title}}</h3>
